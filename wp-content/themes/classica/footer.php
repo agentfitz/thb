@@ -4,35 +4,13 @@
         
 			
 			<script type="text/javascript">
-			jQuery(document).ready(function($){
+				$(function(){
 
-				$.getJSON('http://api.twitter.com/1/statuses/user_timeline/thehealthbits.json?count=1&callback=?', function(tweets){
-				// $.getJSON('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=agentfitz3&count=1&callback=?', function(tweets){
-					var tweet = tweets[0].text;
-					if(tweet.length > 113){
-						$("#tweet_text").html(tweet.substr(0, 114) + "...");
-					}
-					else{
-						$("#tweet_text").html(tweet);
-					}
+					$("#tweet_container").click(function(){
+						window.open("http://twitter.com/thehealthbits");
+					});
+
 				});
-				
-				var tweet_timeout;
-				
-				$("#tweet_container").click(function(){
-					window.open("http://twitter.com/thehealthbits");
-				}).hover(function(){
-					clearTimeout(tweet_timeout);
-					$(this).find("#tweeting").animate({ top: -36 }, 150).end().find("#tweet_text").css({ borderBottom: "1px dotted #fff" });
-				},function(){
-					var $birds = $(this).find("#tweeting"),
-							$text = $(this).find("#tweet_text");							
-					tweet_timeout = window.setTimeout(function(){
-						$birds.animate({ top: -6 }, 150);
-						$text.css({ borderBottom: 0 });
-					}, 2000);
-				});
-			});
 			</script>
 				
 				
@@ -46,7 +24,7 @@
 			<div id="tweet_wrapper">
 				<div id="tweet_container" style="position: relative;">
 					<img src="/wp-content/themes/classica/images/tweeting.gif" id="tweeting" width="150" height="35" />
-					<p><span id="tweet_text"></span> &mdash; Cinthia, <a href="http://twitter.com/thehealthbits">@TheHealthBits</a></p>
+					<p><span id="tweet_text">Treating ourselves right is something we all owe ourselves.</span> &mdash; Cinthia, <a href="http://twitter.com/thehealthbits">@TheHealthBits</a></p>
 					<img src="/wp-content/themes/classica/images/tweet_bird.png" id="tweet_bird" />
 					<img src="/wp-content/themes/classica/images/tweet_triangle.png" id="tweet_triangle" />
 				</div>

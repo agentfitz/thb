@@ -4,7 +4,7 @@
 
 
 <?php 
-	require 'vendor/autoload.php';
+	require 'mailgun-php/vendor/autoload.php';
 	use Mailgun\Mailgun;
 
 	// mailgun credentials
