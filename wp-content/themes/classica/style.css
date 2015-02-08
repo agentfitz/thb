@@ -187,9 +187,11 @@ h6 {
 .page-title {
 	font-size: 22px;
 	font-family: "Droid Serif", Georgia, Times, serif;
-	font-style: italic;
 	padding: 38px 0 38px 0;
 	border-bottom: 1px solid #efefef;
+	/* text-transform: uppercase; */
+	color: #b5367b;
+	font-weight: bold;
 }
 
 .entry-title,
@@ -1651,7 +1653,3 @@ input.submit_button { height: auto; padding: 5px 14px; }
 body.page-id-200 h1.page-title { color: #b5367b; }
 #tweet_container { cursor: pointer; }
 #tweeting { position: absolute; top: -6px; left: 32px; z-index: -1; }
-
-.normal-price {
-	text-decoration: line-through;
-}

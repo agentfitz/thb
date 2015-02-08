@@ -131,23 +131,25 @@
         </div>END #footer -->
 	
 
-        <div style="width: 960px; margin: 0 auto; padding-bottom: 10px;">
-
-        	<p style="margin: 0; color: #efa8ce; font-size: 12px; line-height: 16px;">
-        		Medical and Site Disclaimer: The information on this website is not intended to replace a one-on-one
-        		relationship with a qualified health care professional and is not intended as medical advice.
-        		It is intended as a sharing of knowledge and information from the research and experience of
-        		Cinthia Torres, TheHealthBits.com and Veda Media, LLC. We encourage you to make your own
-        		health care decisions based upon your research and in partnership with a qualified health care
-        		professional. All trademarks and copyrights on this page are owned by their respective owners.
-        		© 2013 The Health Bits
-        	</p>
-
-        </div>
+       
 
 
 
     <!-- END #footer-container -->
+	</div>
+
+	<div style="width: 960px; margin: 15px auto;">
+
+		<p style="margin: 0; color: #aaa; font-size: 12px; line-height: 16px;">
+			Medical and Site Disclaimer: The information on this website is not intended to replace a one-on-one
+			relationship with a qualified health care professional and is not intended as medical advice.
+			It is intended as a sharing of knowledge and information from the research and experience of
+			Cinthia Torres, TheHealthBits.com and Veda Media, LLC. We encourage you to make your own
+			health care decisions based upon your research and in partnership with a qualified health care
+			professional. All trademarks and copyrights on this page are owned by their respective owners.
+			© <?php echo date("Y"); ?> The Health Bits
+		</p>
+
 	</div>
 		
 	<!-- Theme Hook -->

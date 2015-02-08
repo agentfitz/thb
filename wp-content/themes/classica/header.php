@@ -75,7 +75,8 @@
 								<div id="top-nav">
 									<ul>
                                         <li><a href="/yoga">yoga</a></li>
-										<li><a href="/health-coaching">coaching</a></li>
+                                        <li><a href="/health-coaching">health coaching</a></li>
+										<li><a href="/nutritional-coaching">nutritional coaching</a></li>
 										<li><a href="/about">about</a></li>
 										<li><a href="/contact">contact</a></li>
 									</ul>

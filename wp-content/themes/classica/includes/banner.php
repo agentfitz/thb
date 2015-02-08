@@ -29,15 +29,14 @@
 
 
 
-
 <div id="top_signup_outer">
 	<div id="top_signup_inner">
 		<p>Get free digestable health tips to create a healthy, happy life!</p>
-		<form method="post" action="https://app.icontact.com/icp/signup.php" name="top_signup_form" id="top_signup_form" class="sign_up_form" accept-charset="UTF-8">
+		<form method="post" action="/wp-content/themes/classica/mailgun-php/signup_action.php" name="top_signup_form" id="top_signup_form" class="sign_up_form" accept-charset="UTF-8">
 			<input type="hidden" name="redirect" value="<?php echo get_subscribe_thank_you_url() ?>">
 			<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
 			<input type="text" class="clearField fname" value="First name" name="fields_fname" />			
-			<input type="text" class="clearField email" value="Email address" name="fields_email" />
+			<input type="email" class="clearField email" value="Email address" name="fields_email" />
 			<input type="submit" class="submit_button" name="signup_submit" value="jump in!" id="top_sign_up" />			
 			<input type="hidden" name="listid" value="78754">
 			<input type="hidden" name="specialid:78754" value="KMJ3">	
